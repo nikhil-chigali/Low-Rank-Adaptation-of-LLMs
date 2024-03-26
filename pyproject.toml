@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "low-rank adaptation of llms"
+version = "0.1.0"
+description = "This repository is the implementation of the paper \"LoRA: Low-Rank Adaptation of Large Language Models\""
+authors = ["nikhil-chigali <nikhil.chigali@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = {version = "^2.2.1+cu121", source = "torchwheels"}
+torchvision = {version = "^0.17.1+cu121", source = "torchwheels"}
+numpy = "^1.26.4"
+matplotlib = "^3.8.3"
+jupyter = "^1.0.0"
+transformers = "^4.39.1"
+lightning = "^2.2.1"
+datasets = "^2.18.0"
+
+
+[[tool.poetry.source]]
+name = "torchwheels"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

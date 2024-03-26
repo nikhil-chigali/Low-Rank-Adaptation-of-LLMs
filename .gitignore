@@ -1,0 +1,27 @@
+# Compiled Python files
+*.pyc
+
+# Logs and checkpoints
+/logs/
+/checkpoints/
+/cache/
+
+# Model files
+/models/
+
+# Data files
+/data/
+
+# Virtual environments
+/venv/
+/.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Miscellaneous
+.DS_Store
